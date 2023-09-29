@@ -15,7 +15,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- <link rel="stylesheet" href="./css/style-old.css" /> -->
   </head>
 
   <body>
@@ -23,23 +24,23 @@
     <header class="header">
       <div class="container header-section">
         <nav>
-          <a class="header-logo" href="./index.html"
-            ><span class="accent">Web</span>Studio</a
+          <a class="logo" href="./index.html"
+            >Web<span class="logo__black">Studio</span></a
           >
-          <ul class="nav-header">
+          <ul class="nav-list">
             <li>
-              <a class="header-link current" href="./index.html">Студія</a>
+              <a class="list-link current" href="./index.html">Студія</a>
             </li>
             <li>
-              <a class="header-link" href="./portfolio.html">Портфоліо</a>
+              <a class="list-link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li><a class="header-link" href="#Contacts">Контакти</a></li>
+            <li><a class="list-link" href="#Contacts">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="nav-header-contacts">
+        <ul class="nav-list-contacts">
           <li>
             <a class="contact-link" href="mailto:info@devstudio.com">
-              <svg class="contact-link-icon-mail">
+              <svg class="icon icon__mail">
                 <use href="./sprite.svg#mail"></use>
               </svg>
               info@devstudio.com</a
@@ -47,7 +48,7 @@
           </li>
           <li>
             <a class="contact-link" href="tel:+380961111111"
-              ><svg class="contact-link-icon-phone">
+              ><svg class="icon icon__phone">
                 <use href="./sprite.svg#phone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -67,42 +68,42 @@
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <button class="modal-button" data-modal-close>
+              <button class="button-close" data-modal-close>
                 <svg>
                   <use href="./sprite.svg#close"></use>
                 </svg>
               </button>
               <h2>Залиште свої дані, ми вам передзвонимо</h2>
-              <form class="modal-form">
-                <label class="form-box" for="name"
+              <form class="form">
+                <label class="form__box" for="name"
                   >Ім'я
-                  <span class="input-field">
+                  <span class="form__input">
                     <input type="text" id="name" name="name" />
                     <svg>
                       <use href="./sprite.svg#name"></use>
                     </svg>
                   </span>
                 </label>
-                <label class="form-box" for="phone"
+                <label class="form__box" for="phone"
                   >Телефон
-                  <span class="input-field">
+                  <span class="form__input">
                     <input type="tel" id="phone" name="phone" maxlength="12" />
                     <svg>
                       <use href="./sprite.svg#phone2"></use>
                     </svg>
                   </span>
                 </label>
-                <label class="form-box" for="email"
+                <label class="form__box" for="email"
                   >Ім'я
-                  <span class="input-field">
+                  <span class="form__input">
                     <input type="email" id="email" name="email" />
                     <svg>
                       <use href="./sprite.svg#email"></use>
                     </svg>
                   </span>
                 </label>
-                <label class="form-box" for="comment">
-                  <span class="input-field">Коментар</span>
+                <label class="form__box" for="comment">
+                  <span class="form__input">Коментар</span>
                   <textarea
                     class="comment-box"
                     name="comment"
@@ -111,21 +112,21 @@
                     placeholder="Введіть текст"
                   ></textarea>
                 </label>
-                <label class="form-license" for="checkbox">
+                <label class="license" for="checkbox">
                   <input
                     class="checkbox hidden"
                     id="checkbox"
                     type="checkbox"
                     required
                   />
-                  <span class="licence-mark">
+                  <span class="license__mark">
                     <svg>
                       <use href="./sprite.svg#mark"></use>
                     </svg>
                   </span>
-                  <span class="licence-text">
+                  <span class="license__text">
                     Погоджуюся з розсилкою та приймаю
-                    <a class="licence-link" href="#">Умови договору</a>
+                    <a class="license__link" href="#">Умови договору</a>
                   </span></label
                 ><button class="submit-btn" type="submit">Відправити</button>
               </form>
@@ -141,7 +142,7 @@
           <ul>
             <li>
               <div class="sprite-bg">
-                <svg class="sprite-icon">
+                <svg>
                   <use href="./sprite.svg#antenna"></use>
                 </svg>
               </div>
@@ -153,7 +154,7 @@
             </li>
             <li>
               <div class="sprite-bg">
-                <svg class="sprite-icon">
+                <svg>
                   <use href="./sprite.svg#clock"></use>
                 </svg>
               </div>
@@ -165,7 +166,7 @@
             </li>
             <li>
               <div class="sprite-bg">
-                <svg class="sprite-icon">
+                <svg>
                   <use href="./sprite.svg#diagram"></use>
                 </svg>
               </div>
@@ -176,7 +177,7 @@
             </li>
             <li>
               <div class="sprite-bg">
-                <svg class="sprite-icon">
+                <svg>
                   <use href="./sprite.svg#astronaut"></use>
                 </svg>
               </div>
@@ -189,6 +190,7 @@
           </ul>
         </div>
       </section>
+
       <section class="section-third">
         <div class="container">
           <h2>Чим ми займаємося</h2>
@@ -229,21 +231,22 @@
           </ul>
         </div>
       </section>
+
       <section class="section-team">
         <div class="container">
           <h2>Наша команда</h2>
-          <ul class="section-team-box">
-            <li class="section-team-list">
+          <ul class="section-team__box">
+            <li class="section-team__list">
               <img
                 src="./img/Igor.jpg"
                 alt="Ігор Дем'яненко"
                 width="270"
                 height="260"
               />
-              <div class="section-team-text">
+              <div class="section-team__text">
                 <h3>Ігор Дем'яненко</h3>
                 <p>Product Designer</p>
-                <ul class="section-team-icon">
+                <ul class="section-team__icon">
                   <li>
                     <a href="#">
                       <svg>
@@ -275,17 +278,17 @@
                 </ul>
               </div>
             </li>
-            <li class="section-team-list">
+            <li class="section-team__list">
               <img
                 src="./img/Olga.jpg"
                 alt="Ольга Рєпіна"
                 width="270"
                 height="260"
               />
-              <div class="section-team-text">
+              <div class="section-team__text">
                 <h3>Ольга Рєпіна</h3>
                 <p>Frontend Developer</p>
-                <ul class="section-team-icon">
+                <ul class="section-team__icon">
                   <li>
                     <a href="#">
                       <svg>
@@ -317,17 +320,17 @@
                 </ul>
               </div>
             </li>
-            <li class="section-team-list">
+            <li class="section-team__list">
               <img
                 src="./img/Muhailo.jpg"
                 alt="Микола Тарасов"
                 width="270"
                 height="260"
               />
-              <div class="section-team-text">
+              <div class="section-team__text">
                 <h3>Микола Тарасов</h3>
                 <p>Marketing</p>
-                <ul class="section-team-icon">
+                <ul class="section-team__icon">
                   <li>
                     <a href="#">
                       <svg>
@@ -359,17 +362,17 @@
                 </ul>
               </div>
             </li>
-            <li class="section-team-list">
+            <li class="section-team__list">
               <img
                 src="./img/Mukola.jpg"
                 alt="Михайло Єрмаков"
                 width="270"
                 height="260"
               />
-              <div class="section-team-text">
+              <div class="section-team__text">
                 <h3>Михайло Єрмаков</h3>
                 <p>UI Designer</p>
-                <ul class="section-team-icon">
+                <ul class="section-team__icon">
                   <li>
                     <a href="#">
                       <svg>
@@ -404,6 +407,7 @@
           </ul>
         </div>
       </section>
+
       <section class="partners">
         <div class="container">
           <h2>Постійні клієнти</h2>
@@ -457,10 +461,10 @@
 
     <!-- Підвал сторінки -->
     <footer class="footer">
-      <div class="container footer-box">
+      <div class="container footer__box">
         <div>
-          <a class="footer-logo" href="./index.html"
-            ><span class="accent">Web</span>Studio</a
+          <a class="logo" href="./index.html"
+            >Web<span class="logo__white">Studio</span></a
           >
           <address>
             <ul id="Contacts">
@@ -475,14 +479,10 @@
                 >
               </li>
               <li class="footer-li">
-                <a class="contact-link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>
               <li class="footer-li">
-                <a class="contact-link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
+                <a href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
@@ -522,7 +522,7 @@
         </div>
         <div class="tg-form">
           <p>підпишіться на розсилку</p>
-          <form class="form-box-tg" name="tg-form">
+          <form class="modal__label-tg" name="tg-form">
             <input
               name="tg-email"
               class="tg-email"
@@ -530,7 +530,8 @@
               id="tg-email"
               placeholder="E-mail"
               required
-            /><button>
+            />
+            <button>
               Підписатися
               <svg>
                 <use href="./sprite.svg#tg"></use>

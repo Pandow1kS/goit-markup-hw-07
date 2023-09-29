@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -23,25 +23,23 @@
     <header class="header">
       <div class="container header-section">
         <nav>
-          <a class="header-logo" href="./index.html"
-            ><span class="accent">Web</span>Studio</a
+          <a class="logo" href="./index.html"
+            >Web<span class="logo__black">Studio</span></a
           >
-          <ul class="nav-header">
+          <ul class="nav-list">
             <li>
-              <a class="header-link" href="./index.html">Студія</a>
+              <a class="list-link" href="./index.html">Студія</a>
             </li>
             <li>
-              <a class="header-link current" href="./portfolio.html"
-                >Портфоліо</a
-              >
+              <a class="list-link current" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li><a class="header-link" href="#Contacts">Контакти</a></li>
+            <li><a class="list-link" href="#Contacts">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="nav-header-contacts">
+        <ul class="nav-list-contacts">
           <li>
             <a class="contact-link" href="mailto:info@devstudio.com">
-              <svg class="contact-link-icon-mail">
+              <svg class="icon icon__mail">
                 <use href="./sprite.svg#mail"></use>
               </svg>
               info@devstudio.com</a
@@ -49,7 +47,7 @@
           </li>
           <li>
             <a class="contact-link" href="tel:+380961111111"
-              ><svg class="contact-link-icon-phone">
+              ><svg class="icon icon__phone">
                 <use href="./sprite.svg#phone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -91,7 +89,7 @@
                     height="294"
                   />
                 </div>
-                <div class="services-text">
+                <div class="services__text">
                   <h3>Технокряк</h3>
                   <p>Веб-сайт</p>
                 </div>
@@ -115,7 +113,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="services-text">
+                <div class="services__text">
                   <h3>Постер New Orlean vs Golden Star</h3>
                   <p>Дизайн</p>
                 </div>
@@ -139,7 +137,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="services-text">
+                <div class="services__text">
                   <h3>Ресторан Seafood</h3>
                   <p>Додаток</p>
                 </div>
@@ -163,7 +161,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="services-text">
+                <div class="services__text">
                   <h3>Ресторан Prime</h3>
                   <p>Марктеинг</p>
                 </div>
@@ -187,7 +185,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="services-text">
+                <div class="services__text">
                   <h3>Проєкт Boxes</h3>
                   <p>Додаток</p>
                 </div>
@@ -211,7 +209,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="services-text">
+                <div class="services__text">
                   <h3>Inspiration has no Borders</h3>
                   <p>Веб-сайт</p>
                 </div>
@@ -235,7 +233,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="services-text">
+                <div class="services__text">
                   <h3>Видання Limited Edition</h3>
                   <p>Дизайн</p>
                 </div>
@@ -259,7 +257,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="services-text">
+                <div class="services__text">
                   <h3>Проєкт LAB</h3>
                   <p>Маркетинг</p>
                 </div>
@@ -283,7 +281,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="services-text">
+                <div class="services__text">
                   <h3>Growing Business</h3>
                   <p>Додаток</p>
                 </div>
@@ -296,10 +294,10 @@
 
     <!-- Підвал сторінки -->
     <footer class="footer">
-      <div class="container footer-box">
+      <div class="container footer__box">
         <div>
-          <a class="footer-logo" href="./index.html"
-            ><span class="accent">Web</span>Studio</a
+          <a class="logo" href="./index.html"
+            >Web<span class="logo__white">Studio</span></a
           >
           <address>
             <ul id="Contacts">
@@ -314,14 +312,10 @@
                 >
               </li>
               <li class="footer-li">
-                <a class="contact-link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>
               <li class="footer-li">
-                <a class="contact-link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
+                <a href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
@@ -361,7 +355,7 @@
         </div>
         <div class="tg-form">
           <p>підпишіться на розсилку</p>
-          <form class="form-box-tg" name="tg-form">
+          <form class="modal__label-tg" name="tg-form">
             <input
               name="tg-email"
               class="tg-email"
@@ -369,7 +363,8 @@
               id="tg-email"
               placeholder="E-mail"
               required
-            /><button>
+            />
+            <button>
               Підписатися
               <svg>
                 <use href="./sprite.svg#tg"></use>
